@@ -202,7 +202,7 @@ int main()
     // alokacja pamięci
     // alokujemy odpowiednią ilość bajtów
     // dla typu int
-    int *n = malloc(sizeof(int));
+    int *n = (int*)malloc(sizeof(int));
 
     *n = 10;
 
@@ -214,7 +214,7 @@ int main()
     // tablice
 
     // alokacja pamięci dla tablicy
-    int *a = malloc(5 * sizeof(int));
+    int *a = (int*)malloc(5 * sizeof(int));
 
     // zapełnienie tablicy
     int i;
@@ -239,7 +239,7 @@ int main()
         int wzrost;
     };
 
-    struct struktura *s = malloc(sizeof(struct struktura));
+    struct struktura *s = (struct struktura*)malloc(sizeof(struct struktura));
 
     s->wiek = 19;
     s->wzrost = 188;
